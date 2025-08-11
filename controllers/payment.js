@@ -24,7 +24,7 @@ const getSingle = async (req, res) => {
     if (result) {
       res.status(200).json(result); // Use the actual result
     } else {
-      res.status(404).json({ message: 'Order not found' });
+      res.status(404).json({ message: 'Payment not found' });
     }
   } catch (err) {
     console.error('❌ Error fetching data:', err);

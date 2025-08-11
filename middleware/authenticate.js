@@ -7,7 +7,7 @@ const isAuthenticated = (req, res, next) => {
 
 function ensureRole(role) {
     return function (req, res, next) {
-        if (req.isAuthenticated() && req.user.role === role) {
+        if (req.isAuthenticated() && (req.user.role === role || req.user.role === "admin")) {
             return next();
         }
         res.status(403).json({ message: 'Forbidden - You do not have access' });
