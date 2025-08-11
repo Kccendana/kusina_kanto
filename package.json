@@ -1,26 +1,37 @@
 {
-  "name": "kusina_kanto",
+  "name": "team01-finalproject",
   "version": "1.0.0",
-  "description": "CSE341 project",
+  "description": "KusinaKanto is a food ordering API",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kccendana/kusina_kanto.git"
+    "url": "git+https://github.com/haithcock/team01-FinalProject.git"
   },
-  "author": "Katherine Cendana",
+  "keywords": [
+    "food",
+    "ordering"
+  ],
+  "author": "Team 01",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kccendana/kusina_kanto/issues"
+    "url": "https://github.com/haithcock/team01-FinalProject/issues"
   },
-  "homepage": "https://github.com/Kccendana/kusina_kanto#readme",
+  "homepage": "https://github.com/haithcock/team01-FinalProject#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
-    "dotenv": "^17.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mongodb": "^6.17.0",
+    "express-session": "^1.18.2",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
+    "passport": "^0.7.0",
+    "passport-github": "^1.1.0",
+    "passport-github2": "^0.1.12",
     "swagger-autogen": "^2.23.7",
     "swagger-ui-express": "^5.0.1",
     "validatorjs": "^3.22.1"
