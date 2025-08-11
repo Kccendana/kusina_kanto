@@ -10,7 +10,7 @@ const paymentRoutes = require('./payment');
 
 // router.get("/type/:classificationId", utilities.handleErrors(invController.buildByClassificationId));
 router.get('/', (req, res) => {
-    res.send(req.session.user !== undefined ? `Hello ${req.session.user.displayName}` : 'Logged Out');
+    res.send(req.session.user !== undefined ? `Hello ${req.session.user.displayName || req.session.user.userName}` : 'Logged Out');
 });
 
 
